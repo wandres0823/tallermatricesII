@@ -66,12 +66,12 @@ public class Principal extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel1.setForeground(new java.awt.Color(51, 0, 255));
         jLabel1.setText("Operaciones Matrices");
         jLabel1.setToolTipText("");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, -1));
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Datos Iniciales", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 12), new java.awt.Color(255, 0, 0))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Datos Iniciales", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 12), new java.awt.Color(0, 255, 102))); // NOI18N
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setText("No. de Filas:");
@@ -109,7 +109,7 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 350, 60));
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acciones", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 12), new java.awt.Color(255, 0, 0))); // NOI18N
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Datos Iniciales", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 12), new java.awt.Color(0, 255, 102))); // NOI18N
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos Iniciales"));
@@ -125,6 +125,7 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 350, 60));
 
+        cmdCrear.setForeground(new java.awt.Color(0, 153, 255));
         cmdCrear.setText("Crear");
         cmdCrear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,6 +134,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jPanel4.add(cmdCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
+        cmdLlenadoManual.setForeground(new java.awt.Color(0, 153, 255));
         cmdLlenadoManual.setText("Manual");
         cmdLlenadoManual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +143,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jPanel4.add(cmdLlenadoManual, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, -1, -1));
 
+        cmdLlenadoAutomatico.setForeground(new java.awt.Color(0, 153, 255));
         cmdLlenadoAutomatico.setText("Automático");
         cmdLlenadoAutomatico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,6 +152,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jPanel4.add(cmdLlenadoAutomatico, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, -1, -1));
 
+        cmdOperacion.setForeground(new java.awt.Color(0, 153, 255));
         cmdOperacion.setText("Operacion");
         cmdOperacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,6 +161,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jPanel4.add(cmdOperacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, -1, -1));
 
+        cmdLimpiar.setForeground(new java.awt.Color(0, 153, 255));
         cmdLimpiar.setText("Limpiar");
         cmdLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,6 +172,7 @@ public class Principal extends javax.swing.JFrame {
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 60, 480, 60));
 
+        tblTablaInicial.setForeground(new java.awt.Color(153, 0, 153));
         tblTablaInicial.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -181,10 +187,11 @@ public class Principal extends javax.swing.JFrame {
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 360, 210));
 
         cmbOperaciones.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        cmbOperaciones.setForeground(new java.awt.Color(255, 0, 0));
+        cmbOperaciones.setForeground(new java.awt.Color(51, 51, 51));
         cmbOperaciones.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Letra B", "Letra K", "Letra M", "Letra W", "letra Q", "Letra J", "Letra G", "Letra R", "Figura 1", "Figura 2", "Figura 3", "Figura 4" }));
         jPanel1.add(cmbOperaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, -1, -1));
 
+        tblTablaResultado.setForeground(new java.awt.Color(153, 0, 153));
         tblTablaResultado.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -259,26 +266,36 @@ public class Principal extends javax.swing.JFrame {
             nc = Integer.parseInt(txtNumerodeColumnas.getText());
 
             if (nf == 0) {
-                
-                Helper.mensaje(this, "Las filas no pueden ser cero", 3);
-                 txtNumerodeFilas2.requestFocusInWindow();
-                   txtNumerodeFilas2.selectAll();
-           
-            } else if (nf >= 15) {
-                Helper.mensaje(this, "Las filas no pueden ser mayores que 15", 3);   
-                txtNumerodeFilas2.requestFocusInWindow();
-                txtNumerodeFilas2.selectAll();
-                   
-               
+                getToolkit().beep();
+                Helper.mensaje(this, "El Numero de Filas No puede ser cero ", 3);
+                txtNumerodeFilas1.requestFocusInWindow();
+                txtNumerodeFilas1.selectAll();
             } else if (nc == 0) {
-                Helper.mensaje(this, "Las columnas no pueden ser cero", 2);
+                getToolkit().beep();
+                Helper.mensaje(this, "El Numero de Columnas No puede ser cero", 3);
                 txtNumerodeColumnas.requestFocusInWindow();
                 txtNumerodeColumnas.selectAll();
-             } else if (nc >= 15) {
-                Helper.mensaje(this, "Las columnas no pueden ser mayores que 15", 3);   
+            } else if (nf == 1) {
+                getToolkit().beep();
+                Helper.mensaje(this, "El Numero de Filas No puede ser 1", 3);
+                txtNumerodeFilas1.requestFocusInWindow();
+                txtNumerodeFilas1.selectAll();
+            } else if (nc == 1) {
+                getToolkit().beep();
+                Helper.mensaje(this, "El Numero de Columnas No puede ser 1", 3);
                 txtNumerodeColumnas.requestFocusInWindow();
-                   txtNumerodeColumnas.selectAll();
-                   
+                txtNumerodeColumnas.selectAll();
+            } else if (nf > 14) {
+                getToolkit().beep();
+                Helper.mensaje(this, "El Numero de Filas No puede ser mayor a 14", 3);
+                txtNumerodeFilas1.requestFocusInWindow();
+                txtNumerodeFilas1.selectAll();
+            } else if (nc > 14) {
+                getToolkit().beep();
+                Helper.mensaje(this, "El Numero de Columnas No puede ser mayor a 14", 3);
+                txtNumerodeColumnas.requestFocusInWindow();
+                txtNumerodeColumnas.selectAll();
+            } else {       
             }
             tm = (DefaultTableModel) tblTablaInicial.getModel();
             tm2 = (DefaultTableModel) tblTablaResultado.getModel();
@@ -294,6 +311,9 @@ public class Principal extends javax.swing.JFrame {
 
             Helper.habilitarBotones(botonesH);
             Helper.deshabilitarBotones(botonesD);
+        txtNumerodeColumnas.setEditable(false);
+        txtNumerodeFilas1.setEditable(false);
+        
         }
     }//GEN-LAST:event_cmdCrearActionPerformed
 
@@ -368,45 +388,171 @@ public class Principal extends javax.swing.JFrame {
             case 0:
             if(nf!=nc){
                 Helper.mensaje(this, "Deben ser iguales", 3);
-            }else{
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
                 Helper.LetraB(tblTablaInicial, tblTablaResultado);
             }
             break;
             case 1:          
+            if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
                 Helper.LetraK(tblTablaInicial, tblTablaResultado);
+            }
+                
             break;
             case 2:
-                
+              if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
                 Helper.LetraM(tblTablaInicial, tblTablaResultado);
-            
+            }
             break;
             case 3:  
+              if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
                 Helper.LetraW(tblTablaInicial, tblTablaResultado);
-           
+            }
             break;
             case 4:
-            Helper.LetraQ(tblTablaInicial, tblTablaResultado);
+            if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
+                Helper.LetraQ(tblTablaInicial, tblTablaResultado);
+            }
             break;
             case 5:
-            Helper.LetraJ(tblTablaInicial, tblTablaResultado);
+            if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
+                Helper.LetraJ(tblTablaInicial, tblTablaResultado);
+            }
             break;
             case 6:
-            Helper.LetraG(tblTablaInicial, tblTablaResultado);
+            if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
+                Helper.LetraG(tblTablaInicial, tblTablaResultado);
+            }
             break;
             case 7:
-            Helper.LetraR(tblTablaInicial, tblTablaResultado);
+            if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
+                Helper.LetraR(tblTablaInicial, tblTablaResultado);
+            }
             break;
             case 8:
-            Helper.Figura1(tblTablaInicial, tblTablaResultado);
+            if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
+                Helper.Figura1(tblTablaInicial, tblTablaResultado);
+            }
             break;
             case 9:
-            Helper.Figura2(tblTablaInicial, tblTablaResultado);
+            if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
+                Helper.Figura2(tblTablaInicial, tblTablaResultado);
+            }
             break;
             case 10:
-            Helper.Figura3(tblTablaInicial, tblTablaResultado);
+            if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
+                Helper.Figura3(tblTablaInicial, tblTablaResultado);
+            }
             break;
             case 11:
-            Helper.Figura4(tblTablaInicial, tblTablaResultado);
+            if(nf!=nc){
+                Helper.mensaje(this, "Deben ser iguales", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+            } else if (nc < 5 || nf < 5) {
+                    Helper.mensaje(this, "No. de filas y columnas debe ser de 5 o mas", 3);
+                Helper.porDefectoTabla(tblTablaInicial);
+                Helper.porDefectoTabla(tblTablaResultado);
+
+                } else {
+                Helper.Figura4(tblTablaInicial, tblTablaResultado);
+            }
             break;
             
             
@@ -426,8 +572,6 @@ public class Principal extends javax.swing.JFrame {
         nf = tblTablaInicial.getRowCount();
 
         txtNumerodeFilas1.setText("");
-        txtNumerodeColumnas1.setText("");
-        txtNumerodeFilas2.setText("");
         txtNumerodeColumnas.setText("");
         txtNumerodeFilas1.requestFocusInWindow();
         cmbOperaciones.setSelectedIndex(0);
